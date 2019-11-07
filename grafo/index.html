@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+	<meta charset="UTF-8">
+	<title>Grafo - David Álvarez</title>
+	<link rel="stylesheet" type="text/css" href="../css/grafo.css">
+    </head>
+    
+    <body background="../img/background.jpg">
+	<h1 align="center" style="margin-left: 40px; margin-right: 40px;">Grafo - David Álvarez</h1>
+	<a href="../index.html">
+	    <img src="../img/home.png" height="30px" style="position: absolute; top: 22px; left: 15px;" />
+	</a>
+
+	
+	<table width="100%" height="100%">
+	    <tr>
+		<td width="50%" style="min-width: 550px;">
+		    <div id="positioner">
+			<form action="solucionador.php" method="post">
+			    <input id="circle" name="s0" style="top: 150px; left: 200px; background: white;" disabled>
+			    <input id="circle" name="s1" style="top: 150px; left: 350px; background: white;" disabled>
+			    <input id="circle" name="s2" style="top: 250px; left: 275px; background: white;" disabled>
+			    <input id="circle" name="s3" style="top: 325px; left: 75px; background: white;" disabled>
+			    <input id="circle" name="s4" style="top: 325px; left: 475px; background: white;" disabled>
+			    <input id="circle" name="s5" style="top: 375px; left: 200px; background: white;" disabled>
+			    <input id="circle" name="s6" style="top: 375px; left: 350px; background: white;" disabled>
+			    <input id="circle" name="s7" style="top: 500px; left: 175px; background: white;" disabled>
+			    <input id="circle" name="s8" style="top: 500px; left: 400px; background: white;" disabled>
+
+			    <input id="square" name="i0" style="top: 180px; left: 275px;" onkeypress="return justNumbers(event)" type="number" required>
+			    <input id="square" name="i1" style="top: 260px; left: 160px;" onkeypress="return justNumbers(event)" type="number" required>
+			    <input id="square" name="i2" style="top: 260px; left: 400px;" onkeypress="return justNumbers(event)" type="number" required>
+			    <input id="square" name="i3" style="top: 340px; left: 275px;" onkeypress="return justNumbers(event)" type="number" required>
+			    <input id="square" name="i4" style="top: 410px; left: 140px;" onkeypress="return justNumbers(event)" type="number" required>
+			    <input id="square" name="i5" style="top: 410px; left: 420px;" onkeypress="return justNumbers(event)" type="number" required>
+			    <input id="square" name="i6" style="top: 475px; left: 275px;" onkeypress="return justNumbers(event)" type="number" required>
+
+			    <canvas id="myCanvas1" width="500" height="500"></canvas>
+			    <button type="submit" id="button_pos">RESOLVER GRAFO</button>
+			</form>
+		    </div>
+		</td>
+		
+		<td width="50%" style="min-width: 550px;">
+		    <div id="positioner">
+			<form action="comprobador.php" method="post">
+			    <input id="circle" name="s0" style="top: 150px; left: 200px; color: red;" onkeypress="return justNumbers(event)" type="number" required>
+			    <input id="circle" name="s1" style="top: 150px; left: 350px; color: red;" onkeypress="return justNumbers(event)" type="number" required>
+			    <input id="circle" name="s2" style="top: 250px; left: 275px; color: red;" onkeypress="return justNumbers(event)" type="number" required>
+			    <input id="circle" name="s3" style="top: 325px; left: 75px; color: red;" onkeypress="return justNumbers(event)" type="number" required>
+			    <input id="circle" name="s4" style="top: 325px; left: 475px; color: red;" onkeypress="return justNumbers(event)" type="number" required>
+			    <input id="circle" name="s5" style="top: 375px; left: 200px; color: red;" onkeypress="return justNumbers(event)" type="number" required>
+			    <input id="circle" name="s6" style="top: 375px; left: 350px; color: red;" onkeypress="return justNumbers(event)" type="number" required>
+			    <input id="circle" name="s7" style="top: 500px; left: 175px; color: red;" onkeypress="return justNumbers(event)" type="number" required>
+			    <input id="circle" name="s8" style="top: 500px; left: 400px; color: red;" onkeypress="return justNumbers(event)" type="number" required>
+
+			    <input id="square" name="i0" style="top: 180px; left: 275px;" onkeypress="return justNumbers(event)" type="number" required>
+			    <input id="square" name="i1" style="top: 260px; left: 160px;" onkeypress="return justNumbers(event)" type="number" required>
+			    <input id="square" name="i2" style="top: 260px; left: 400px;" onkeypress="return justNumbers(event)" type="number" required>
+			    <input id="square" name="i3" style="top: 340px; left: 275px;" onkeypress="return justNumbers(event)" type="number" required>
+			    <input id="square" name="i4" style="top: 410px; left: 140px;" onkeypress="return justNumbers(event)" type="number" required>
+			    <input id="square" name="i5" style="top: 410px; left: 420px;" onkeypress="return justNumbers(event)" type="number" required>
+			    <input id="square" name="i6" style="top: 475px; left: 275px;" onkeypress="return justNumbers(event)" type="number" required>
+
+			    <canvas id="myCanvas2" width="500" height="500"></canvas>
+			    <button type="submit" id="button_pos">COMPROBAR SOLUCIÓN</button>
+			</form>
+		    </div>
+		</td>
+	    </tr>
+
+	    <tr>
+		<td style="text-align: right;">
+		    <form action="generador.php">
+			<button type="submit" style="margin-right: -65px; margin-top: 600px;">
+			    GENERAR GRAFO
+			</button>
+		    </form>
+
+		</td>
+	    </tr>
+	</table>
+
+	<script src="../js/grafo.js"></script>
+	<script src="../js/numeros.js"></script> 
+    </body>
+</html>
