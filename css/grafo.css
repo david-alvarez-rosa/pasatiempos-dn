@@ -1,0 +1,91 @@
+#circle {
+    width: 40px;
+    height: 40px;
+    -webkit-border-radius: 27px;
+    -moz-border-radius: 27px;
+    border-radius: 27px;
+    border: 3px solid black;
+    position: absolute;
+    font-size: 26px;  
+}
+
+#square {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    position: absolute;
+    font-size: 30px;    
+}
+
+#myCanvas1 {
+    position: absolute;
+    top: 140px;
+    left: 80px;
+    z-index: -1;
+}
+
+#myCanvas2 {
+    position: absolute;
+    top: 140px;
+    left: 80px;
+    z-index: -1;
+}
+
+input { 
+    text-align: center;
+    font-weight: bold;    
+}
+
+p {
+    position: relative;
+    top: 100px;
+}
+
+#positioner {
+    position: absolute;
+    top: 0px;
+}
+
+#positioner1 {
+    position: absolute;
+    top: 0px;
+    left: 30%;
+}
+
+#positioner_but1 {
+    position: absolute;
+    top: 650px;
+    left: 33%;
+}
+
+#positioner_but2 {
+    position: absolute;
+    top: 650px;
+    left: 60%;
+}
+
+#positioner_but_mid {
+    position: absolute;
+    top: 650px;
+    left: 46%;
+}
+
+#button_pos {
+    position: absolute;
+    top: 600px;
+    left: 250px;
+}
+
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+#informer {
+    font-size: 20px;
+    margin-right: -70px;
+}

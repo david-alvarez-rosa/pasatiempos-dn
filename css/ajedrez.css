@@ -1,0 +1,42 @@
+input {
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    border: transparent !important;
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+table, th, td {
+    padding: 0px;
+    border-collapse: collapse;
+    font-family: Calibri, sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+#normal {
+    border: solid thin black;
+}
+
+#externo {
+    border: solid medium black;
+}
+
+img {
+    width: 40px;
+    height: 40px;
+    padding: 0px;
+}
+
+td {
+    width: 40px;
+    height: 40px;
+}

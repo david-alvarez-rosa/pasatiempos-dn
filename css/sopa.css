@@ -1,0 +1,41 @@
+input[type='text'] {
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    border: transparent !important;
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+table, th, td {
+    padding: 0px;
+    border-collapse: collapse;
+    font-family: Calibri, sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+#externo {
+    border: solid medium black;
+}
+
+#normal {
+    border: solid thin black;
+}
+
+td {
+    width: 35px;
+    height: 35px;
+}
+
+input[type='checkbox'] {
+    width: 15px;
+    height: 15px;
+}

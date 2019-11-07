@@ -1,0 +1,12 @@
+#info_table {
+    border-collapse: collapse;
+    border: solid medium black;
+}
+
+#info_td {
+    border: solid thin black;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    padding: 10px;
+}

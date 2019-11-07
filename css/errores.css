@@ -1,0 +1,15 @@
+p {
+    font-size: 18px;
+}
+
+#uploadPreview1 {
+    width: 400px;
+    padding: 2px;
+    border: 2px solid black;
+}
+
+#uploadPreview2 {
+    width: 400px;
+    padding: 2px;
+    border: 2px solid black;
+}
