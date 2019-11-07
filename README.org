@@ -1,5 +1,4 @@
 * Pasatiempos DN
 
 This project is not finished yet, hoping to finish it someday. It's currently
-hosted in: 
-[[https://david.alvarezrosa.com/pasatiempos-dn][https://david.alvarezrosa.com/pasatiempos-dn]]
+hosted [[https://david.alvarezrosa.com/pasatiempos-dn][here]].
