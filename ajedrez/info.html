@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+	<meta charset="UTF-8">
+	<title>Ajedrez - David Álvarez</title>
+	<link rel="stylesheet" type="text/css" href="../css/info.css">
+	<link rel="stylesheet" type="text/css" href="../css/ajedrez.css">	
+    </head>
+
+    
+    <body background="../img/background.jpg">
+	<h1 align="center" style="margin-left: 40px; margin-right: 40px;">Ajedrez - David Álvarez</h1>
+	<a href="../index.html">
+	    <img src="../img/home.png" height="30px" style="position: absolute; top: 22px; left: 15px;" />
+	</a>
+	<br/><br/>
+
+	<p align="center">Debe introducir la abreviatura seguida del color (B o N).</p>
+	<br/><br/>
+
+	<table align="center" id="info_table">
+	    <tr>
+		<td id="info_td"><strong>Abreviatura</strong></td>
+		<td id="info_td"><strong>Pieza</strong></td>
+		<td id="info_td"><strong>B</strong></td>
+		<td id="info_td"><strong>N</strong></td>		
+	    </tr>
+
+	    <tr>
+		<td id="info_td">R</td>
+		<td id="info_td">Rey</td>
+		<td id="info_td"><img src="piezas/blancas/rey.png" /></td>
+		<td id="info_td"><img src="piezas/negras/rey.png" /></td>
+
+		<tr>
+		    <td id="info_td">D</td>
+		    <td id="info_td">Dama</td>
+		    <td id="info_td"><img src="piezas/blancas/dama.png" /></td>
+		    <td id="info_td"><img src="piezas/negras/dama.png" /></td>
+		</tr>
+
+		<tr>
+		    <td id="info_td">T</td>
+		    <td id="info_td">Torre</td>
+		    <td id="info_td"><img src="piezas/blancas/torre.png" /></td>
+		    <td id="info_td"><img src="piezas/negras/torre.png" /></td>
+		</tr>
+
+		<tr>
+		    <td id="info_td">C</td>
+		    <td id="info_td">Caballo</td>
+		    <td id="info_td"><img src="piezas/blancas/caballo.png" /></td>
+		    <td id="info_td"><img src="piezas/negras/caballo.png" /></td>
+		</tr>
+
+		<tr>
+		    <td id="info_td">A</td>
+		    <td id="info_td">Alfil</td>
+		    <td id="info_td"><img src="piezas/blancas/alfil.png" /></td>
+		    <td id="info_td"><img src="piezas/negras/alfil.png" /></td>		
+		</tr>
+		
+		<tr>
+		    <td id="info_td">P</td>
+		    <td id="info_td">Peón</td>
+		    <td id="info_td"><img src="piezas/blancas/peon.png" /></td>
+		    <td id="info_td"><img src="piezas/negras/peon.png" /></td>		
+		</tr>
+	</table>
+
+	
+
+	<br/><br/><br/>
+	<p align="center"><strong>Ejemplo:</strong></p>
+	<p align="center"><em>Izquierda entrada, derecha resultado tras presionar botón ACTUALIZAR.</em></p>	
+	<br/><br/>	
+
+
+	<table width="100%">
+	    <tr>
+		<td width="50%" style="min-width: 400px;" align="center">
+		    <table id ="externo">
+			<tr>
+			    <td id="normal"><input name="i00" style="color: black" value="TN" disabled></td>
+			    <td id="normal" bgcolor="gray"><input name="i01" style="color: black" value="CN" disabled/></td>
+			    <td id="normal"><input name="i02" style="color: black" value="AN" disabled/></td>
+			    <td id="normal" bgcolor="gray"><input name="i03" style="color: black" value="DN" disabled /></td>
+			    <td id="normal"><input name="i04" style="color: black" value="RN" disabled /></td>
+			    <td id="normal" bgcolor="gray"><input name="i05" style="color: black" value="AN" disabled /></td>
+			    <td id="normal"><input name="i06" style="color: black" value="CN" disabled /></td>
+			    <td id="normal" bgcolor="gray"><input name="i07" style="color: black" value="TN" disabled /></td>
+			</tr>
+			
+			<tr>
+			    <td id="normal" bgcolor="gray"><input name="i10" style="color: black" value="PN" disabled /></td>
+			    <td id="normal"><input name="i11" style="color: black" value="PN" disabled /></td>
+			    <td id="normal" bgcolor="gray"><input name="i12" style="color: black" value="PN" disabled /></td>
+			    <td id="normal"><input name="i13" style="color: black" value="PN" disabled /></td>
+			    <td id="normal" bgcolor="gray"><input name="i14" style="color: black" value="PN" disabled /></td>
+			    <td id="normal"><input name="i15" style="color: black" value="PN" disabled /></td>
+			    <td id="normal" bgcolor="gray"><input name="i16" style="color: black" value="PN" disabled /></td>
+			    <td id="normal"><input name="i17" style="color: black" value="PN" disabled /></td>
+			</tr>
+			
+			<tr>
+			    <td id="normal"><input name="i20" style="color: black" disabled /></td>
+			    <td id="normal" bgcolor="gray"><input name="i21" style="color: black" disabled /></td>
+			    <td id="normal"><input name="i22" style="color: black" disabled /></td>
+			    <td id="normal" bgcolor="gray"><input name="i23" style="color: black" disabled /></td>
+			    <td id="normal"><input name="i24" style="color: black" disabled /></td>
+			    <td id="normal" bgcolor="gray"><input name="i25" style="color: black" disabled /></td>
+			    <td id="normal"><input name="i26" style="color: black" disabled /></td>
+			    <td id="normal" bgcolor="gray"><input name="i27" style="color: black" disabled /></td>
+			</tr>
+
+			<tr>
+			    <td id="normal" bgcolor="gray"><input name="i30" style="color: black" disabled /></td>
+			    <td id="normal"><input name="i31" style="color: black" disabled /></td>
+			    <td id="normal" bgcolor="gray"><input name="i32" style="color: black" disabled /></td>
+			    <td id="normal"><input name="i33" style="color: black" disabled /></td>
+			    <td id="normal" bgcolor="gray"><input name="i34" style="color: black" disabled /></td>
+			    <td id="normal"><input name="i35" style="color: black" disabled /></td>
+			    <td id="normal" bgcolor="gray"><input name="i36" style="color: black" disabled /></td>
+			    <td id="normal"><input name="i37" style="color: black" disabled /></td>
+			</tr>
+
+			<tr>
+			    <td id="normal"><input name="i40" style="color: black" disabled /></td>
+			    <td id="normal" bgcolor="gray"><input name="i41" style="color: black" disabled /></td>
+			    <td id="normal"><input name="i42" style="color: black" disabled /></td>
+			    <td id="normal" bgcolor="gray"><input name="i43" style="color: black" disabled /></td>
+			    <td id="normal"><input name="i44" style="color: black" disabled /></td>
+			    <td id="normal" bgcolor="gray"><input name="i45" style="color: black" disabled /></td>
+			    <td id="normal"><input name="i46" style="color: black" disabled /></td>
+			    <td id="normal" bgcolor="gray"><input name="i47" style="color: black" disabled /></td>
+			</tr>
+
+			<tr>
+			    <td id="normal" bgcolor="gray"><input name="i50" style="color: black" disabled /></td>
+			    <td id="normal"><input name="i51" style="color: black" disabled /></td>
+			    <td id="normal" bgcolor="gray"><input name="i52" style="color: black" disabled /></td>
+			    <td id="normal"><input name="i53" style="color: black" disabled /></td>
+			    <td id="normal" bgcolor="gray"><input name="i54" style="color: black" disabled /></td>
+			    <td id="normal"><input name="i55" style="color: black" disabled /></td>
+			    <td id="normal" bgcolor="gray"><input name="i56" style="color: black" disabled /></td>
+			    <td id="normal"><input name="i57" style="color: black" disabled /></td>
+			</tr>
+			
+			<tr>
+			    <td id="normal"><input name="i60" style="color: black" value="PB" disabled /></td>
+			    <td id="normal" bgcolor="gray"><input name="i61" style="color: black" value="PB" disabled /></td>
+			    <td id="normal"><input name="i62" style="color: black" value="PB" disabled /></td>
+			    <td id="normal" bgcolor="gray"><input name="i63" style="color: black" value="PB" disabled /></td>
+			    <td id="normal"><input name="i64" style="color: black" value="PB" disabled /></td>
+			    <td id="normal" bgcolor="gray"><input name="i65" style="color: black" value="PB" disabled /></td>
+			    <td id="normal"><input name="i66" style="color: black" value="PB" disabled /></td>
+			    <td id="normal" bgcolor="gray"><input name="i67" style="color: black" value="PB" disabled /></td>
+			</tr>
+
+			<tr>
+			    <td id="normal" bgcolor="gray"><input name="i70" style="color: black" value="TB" disabled /></td>
+			    <td id="normal"><input name="i71" style="color: black" value="CB" disabled /></td>
+			    <td id="normal" bgcolor="gray"><input name="i72" style="color: black" value="AB" disabled /></td>
+			    <td id="normal"><input name="i73" style="color: black" value="RB" disabled /></td>
+			    <td id="normal" bgcolor="gray"><input name="i74" style="color: black" value="DB" disabled /></td>
+			    <td id="normal"><input name="i75" style="color: black" value="AB" disabled /></td>
+			    <td id="normal" bgcolor="gray"><input name="i76" style="color: black" value="CB" disabled /></td>
+			    <td id="normal"><input name="i77" style="color: black" value="TB" disabled /></td>
+			</tr>
+		    </table>
+
+		    
+		<td width="50%" style="min-width: 400px;" align="center">
+		    <table id ="externo">
+			<tr>
+			    <td id="normal"><img src="piezas/negras/torre.png" /></td>
+			    <td id="normal" bgcolor="gray"><img src="piezas/negras/caballo.png" /></td>
+			    <td id="normal"><img src="piezas/negras/alfil.png" /></td>
+			    <td id="normal" bgcolor="gray"><img src="piezas/negras/rey.png" /></td>
+			    <td id="normal"><img src="piezas/negras/dama.png" /></td>
+			    <td id="normal" bgcolor="gray"><img src="piezas/negras/alfil.png" /></td>
+			    <td id="normal"><img src="piezas/negras/caballo.png" /></td>
+			    <td id="normal" bgcolor="gray"><img src="piezas/negras/torre.png" /></td>
+
+			</tr>
+			<tr>
+			    <td id="normal" bgcolor="gray"><img src="piezas/negras/peon.png" /></td>
+			    <td id="normal"><img src="piezas/negras/peon.png" /></td>
+			    <td id="normal" bgcolor="gray"><img src="piezas/negras/peon.png" /></td>
+			    <td id="normal"><img src="piezas/negras/peon.png" /></td>
+			    <td id="normal" bgcolor="gray"><img src="piezas/negras/peon.png" /></td>
+			    <td id="normal"><img src="piezas/negras/peon.png" /></td>
+			    <td id="normal" bgcolor="gray"><img src="piezas/negras/peon.png" /></td>
+			    <td id="normal"><img src="piezas/negras/peon.png" /></td>
+
+			</tr>
+			<tr>
+			    <td id="normal"></td>
+			    <td id="normal" bgcolor="gray"></td>
+			    <td id="normal"></td>
+			    <td id="normal" bgcolor="gray"></td>
+			    <td id="normal"></td>
+			    <td id="normal" bgcolor="gray"></td>
+			    <td id="normal"></td>
+			    <td id="normal" bgcolor="gray"></td>
+			</tr>
+
+			<tr>
+			    <td id="normal" bgcolor="gray"></td>
+			    <td id="normal"></td>
+			    <td id="normal" bgcolor="gray"></td>
+			    <td id="normal"></td>
+			    <td id="normal" bgcolor="gray"></td>
+			    <td id="normal"></td>
+			    <td id="normal" bgcolor="gray"></td>
+			    <td id="normal"></td>
+			</tr>
+
+			<tr>
+			    <td id="normal"></td>
+			    <td id="normal" bgcolor="gray"></td>
+			    <td id="normal"></td>
+			    <td id="normal" bgcolor="gray"></td>
+			    <td id="normal"></td>
+			    <td id="normal" bgcolor="gray"></td>
+			    <td id="normal"></td>
+			    <td id="normal" bgcolor="gray"></td>
+			</tr>
+
+			<tr>
+			    <td id="normal" bgcolor="gray"></td>
+			    <td id="normal"></td>
+			    <td id="normal" bgcolor="gray"></td>
+			    <td id="normal"></td>
+			    <td id="normal" bgcolor="gray"></td>
+			    <td id="normal"></td>
+			    <td id="normal" bgcolor="gray"></td>
+			    <td id="normal"></td>
+			</tr>
+
+			<tr>
+			    <td id="normal"><img src="piezas/blancas/peon.png" /></td>
+			    <td id="normal" bgcolor="gray"><img src="piezas/blancas/peon.png" /></td>
+			    <td id="normal"><img src="piezas/blancas/peon.png" /></td>
+			    <td id="normal" bgcolor="gray"><img src="piezas/blancas/peon.png" /></td>
+			    <td id="normal"><img src="piezas/blancas/peon.png" /></td>
+			    <td id="normal" bgcolor="gray"><img src="piezas/blancas/peon.png" /></td>
+			    <td id="normal"><img src="piezas/blancas/peon.png" /></td>
+			    <td id="normal" bgcolor="gray"><img src="piezas/blancas/peon.png" /></td>
+			</tr>
+
+			<tr>
+			    <td id="normal" bgcolor="gray"><img src="piezas/blancas/torre.png" /></td>
+			    <td id="normal"><img src="piezas/blancas/caballo.png" /></td>
+			    <td id="normal" bgcolor="gray"><img src="piezas/blancas/alfil.png" /></td>
+			    <td id="normal"><img src="piezas/blancas/rey.png" /></td>
+			    <td id="normal" bgcolor="gray"><img src="piezas/blancas/dama.png" /></td>
+			    <td id="normal"><img src="piezas/blancas/alfil.png" /></td>
+			    <td id="normal" bgcolor="gray"><img src="piezas/blancas/caballo.png" /></td>
+			    <td id="normal"><img src="piezas/blancas/torre.png" /></td>
+			</tr>
+		    </table>
+		</td>
+	    </tr>
+	</table>
+	
+	<br/><br/><br/><br/><br/>
+
+    </body>
+</html>
