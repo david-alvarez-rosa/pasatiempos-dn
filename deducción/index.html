@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Deducción - David Álvarez</title>
+        <link rel="stylesheet" type="text/css" href="../css/deduccion.css">
+        <script src="../js/deduccion.js"></script>
+    </head>
+
+    
+    <body background="../img/background.jpg">
+	<h1 align="center" style="margin-left: 40px; margin-right: 40px;">Deducción - David Álvarez</h1>
+	<a href="../index.html">
+	    <img src="../img/home.png" height="30px" style="position: absolute; top: 22px; left: 15px;" />
+	</a>
+        <br/><br/><br/><br/><br/>
+	
+        <table width="100%" height="100%">
+            <tr>
+                <td width="50%" style="min-width: 400px;">
+                    <form action="solucionador.php" method="post" name="form1">
+                        <table align="center">
+                            <tr>
+                                <td id="big_top_left"><input type="text" oninput="upperCaseF(this, document.form1.i01)" maxlength="1" name="i00" required></td>
+                                <td id="big_top"><input type="text" onkeydown="upperCaseF(this, document.form1.i02)" maxlength="1" name="i01" required></td>
+                                <td id="big_top"><input type="text" onkeydown="upperCaseF(this, document.form1.i03)" maxlength="1" name="i02" required></td>
+                                <td id="big_top"><input type="text" onkeydown="upperCaseF(this, document.form1.i04)" maxlength="1" name="i03" required></td>
+                                <td id="big_top_right"><input type="text" onkeydown="upperCaseF(this, document.form1.i05)" maxlength="1" name="i04" required></td>
+                                <td id="separator"></td>
+                                <td id="big_top_right_left"><input type="text" onkeydown="upperCaseF(this, document.form1.i06)" maxlength="1" name="i05" required></td>
+                                <td id="separator2"></td>
+                                <td id="big_top_right_left"><input type="text" onkeydown="upperCaseF(this, document.form1.i10)" maxlength="1" name="i06" required></td>
+                            </tr>
+			    
+                            <tr>
+                                <td id="big_left"><input type="text" onkeydown="upperCaseF(this, document.form1.i11)" maxlength="1" name="i10" required></td>
+                                <td id="normal"><input type="text" onkeydown="upperCaseF(this, document.form1.i12)" maxlength="1" name="i11" required></td>
+                                <td id="normal"><input type="text" onkeydown="upperCaseF(this, document.form1.i13)" maxlength="1" name="i12" required></td>
+                                <td id="normal"><input type="text" onkeydown="upperCaseF(this, document.form1.i14)" maxlength="1" name="i13" required></td>
+                                <td id="big_right"><input type="text" onkeydown="upperCaseF(this, document.form1.i15)" maxlength="1" name="i14" required></td>
+                                <td id="separator"></td>
+                                <td id="big_right_left"><input type="text" onkeydown="upperCaseF(this, document.form1.i16)" maxlength="1" name="i15" required></td>
+                                <td id="separator2"></td>
+                                <td id="big_right_left"><input type="text" onkeydown="upperCaseF(this, document.form1.i20)" maxlength="1" name="i16" required></td>
+                            </tr>
+			    
+                            <tr>
+                                <td id="big_left"><input type="text" onkeydown="upperCaseF(this, document.form1.i21)" maxlength="1" name="i20" required></td>
+                                <td id="normal"><input type="text" onkeydown="upperCaseF(this, document.form1.i22)" maxlength="1" name="i21" required></td>
+                                <td id="normal"><input type="text" onkeydown="upperCaseF(this, document.form1.i23)" maxlength="1" name="i22" required></td>
+                                <td id="normal"><input type="text" onkeydown="upperCaseF(this, document.form1.i24)" maxlength="1" name="i23" required></td>
+                                <td id="big_right"><input type="text" onkeydown="upperCaseF(this, document.form1.i25)" maxlength="1" name="i24" required></td>
+                                <td id="separator"></td>
+                                <td id="big_right_left"><input type="text" onkeydown="upperCaseF(this, document.form1.i26)" maxlength="1" name="i25" required></td>
+                                <td id="separator2"></td>
+                                <td id="big_right_left"><input type="text" onkeydown="upperCaseF(this, document.form1.i30)" maxlength="1" name="i26" required></td>
+                            </tr>
+			    
+                            <tr>
+                                <td id="big_left"><input type="text" onkeydown="upperCaseF(this, document.form1.i31)" maxlength="1" name="i30" required></td>
+                                <td id="normal"><input type="text" onkeydown="upperCaseF(this, document.form1.i32)" maxlength="1" name="i31" required></td>
+                                <td id="normal"><input type="text" onkeydown="upperCaseF(this, document.form1.i33)" maxlength="1" name="i32" required></td>
+                                <td id="normal"><input type="text" onkeydown="upperCaseF(this, document.form1.i34)" maxlength="1" name="i33" required></td>
+                                <td id="big_right"><input type="text" onkeydown="upperCaseF(this, document.form1.i35)" maxlength="1" name="i34" required></td>
+                                <td id="separator"></td>
+                                <td id="big_right_left"><input type="text" onkeydown="upperCaseF(this, document.form1.i36)" maxlength="1" name="i35" required></td>
+                                <td id="separator2"></td>
+                                <td id="big_right_left"><input type="text" onkeydown="upperCaseF(this, document.form1.i40)" maxlength="1" name="i36" required></td>
+                            </tr>
+			    
+                            <tr>
+                                <td id="big_bottom_left"><input type="text" onkeydown="upperCaseF(this, document.form1.i41)" maxlength="1" name="i40" required></td>
+                                <td id="big_bottom"><input type="text" onkeydown="upperCaseF(this, document.form1.i42)" maxlength="1" name="i41" required></td>
+                                <td id="big_bottom"><input type="text" onkeydown="upperCaseF(this, document.form1.i43)" maxlength="1" name="i42" required></td>
+                                <td id="big_bottom"><input type="text" onkeydown="upperCaseF(this, document.form1.i44)" maxlength="1" name="i43" required></td>
+                                <td id="big_bottom_right"><input type="text" onkeydown="upperCaseF(this, document.form1.i45)" maxlength="1" name="i44" required></td>
+                                <td id="separator"></td>
+                                <td id="big_bottom_right_left"><input type="text" onkeydown="upperCaseF(this, document.form1.i46)" maxlength="1" name="i45" required></td>
+                                <td id="separator2"></td>
+                                <td id="big_bottom_right_left"><input type="text" onkeydown="upperCaseF(this, 'not')" maxlength="1" name="i46" required></td>
+                            </tr>
+                        </table>
+                        <br/><br/><br/><br/>
+                        <div align="center">
+                            <button type="submit">RESOLVER DEDUCCIÓN</button>
+                        </div>
+                    </form>
+                </td>
+
+                <td width="50%" style="min-width: 400px;">
+		    <form action="comprobador.php" method="post" name="form2">
+			<table align="center">
+			    <tr>
+				<td id="big_top_left"><input type="text" oninput="upperCaseF(this, document.form2.i01)" maxlength="1" name="i00" required></td>
+				<td id="big_top"><input type="text" onkeydown="upperCaseF(this, document.form2.i02)" maxlength="1" name="i01" required></td>
+				<td id="big_top"><input type="text" onkeydown="upperCaseF(this, document.form2.i03)" maxlength="1" name="i02" required></td>
+				<td id="big_top"><input type="text" onkeydown="upperCaseF(this, document.form2.i04)" maxlength="1" name="i03" required></td>
+				<td id="big_top_right"><input type="text" onkeydown="upperCaseF(this, document.form2.i05)" maxlength="1" name="i04" required></td>
+				<td id="separator"></td>
+				<td id="big_top_right_left"><input type="text" onkeydown="upperCaseF(this, document.form2.i06)" maxlength="1" name="i05" required></td>
+				<td id="separator2"></td>
+				<td id="big_top_right_left"><input type="text" onkeydown="upperCaseF(this, document.form2.i10)" maxlength="1" name="i06" required></td>
+			    </tr>
+			    
+			    <tr>
+				<td id="big_left"><input type="text" onkeydown="upperCaseF(this, document.form2.i11)" maxlength="1" name="i10" required></td>
+				<td id="normal"><input type="text" onkeydown="upperCaseF(this, document.form2.i12)" maxlength="1" name="i11" required></td>
+				<td id="normal"><input type="text" onkeydown="upperCaseF(this, document.form2.i13)" maxlength="1" name="i12" required></td>
+				<td id="normal"><input type="text" onkeydown="upperCaseF(this, document.form2.i14)" maxlength="1" name="i13" required></td>
+				<td id="big_right"><input type="text" onkeydown="upperCaseF(this, document.form2.i15)" maxlength="1" name="i14" required></td>
+				<td id="separator"></td>
+				<td id="big_right_left"><input type="text" onkeydown="upperCaseF(this, document.form2.i16)" maxlength="1" name="i15" required></td>
+				<td id="separator2"></td>
+				<td id="big_right_left"><input type="text" onkeydown="upperCaseF(this, document.form2.i20)" maxlength="1" name="i16" required></td>
+			    </tr>
+			    
+			    <tr>
+				<td id="big_left"><input type="text" onkeydown="upperCaseF(this, document.form2.i21)" maxlength="1" name="i20" required></td>
+				<td id="normal"><input type="text" onkeydown="upperCaseF(this, document.form2.i22)" maxlength="1" name="i21" required></td>
+				<td id="normal"><input type="text" onkeydown="upperCaseF(this, document.form2.i23)" maxlength="1" name="i22" required></td>
+				<td id="normal"><input type="text" onkeydown="upperCaseF(this, document.form2.i24)" maxlength="1" name="i23" required></td>
+				<td id="big_right"><input type="text" onkeydown="upperCaseF(this, document.form2.i25)" maxlength="1" name="i24" required></td>
+				<td id="separator"></td>
+				<td id="big_right_left"><input type="text" onkeydown="upperCaseF(this, document.form2.i26)" maxlength="1" name="i25" required></td>
+				<td id="separator2"></td>
+				<td id="big_right_left"><input type="text" onkeydown="upperCaseF(this, document.form2.i30)" maxlength="1" name="i26" required></td>
+			    </tr>
+			    
+			    <tr>
+				<td id="big_left"><input type="text" onkeydown="upperCaseF(this, document.form2.i31)" maxlength="1" name="i30" required></td>
+				<td id="normal"><input type="text" onkeydown="upperCaseF(this, document.form2.i32)" maxlength="1" name="i31" required></td>
+				<td id="normal"><input type="text" onkeydown="upperCaseF(this, document.form2.i33)" maxlength="1" name="i32" required></td>
+				<td id="normal"><input type="text" onkeydown="upperCaseF(this, document.form2.i34)" maxlength="1" name="i33" required></td>
+				<td id="big_right"><input type="text" onkeydown="upperCaseF(this, document.form2.i35)" maxlength="1" name="i34" required></td>
+				<td id="separator"></td>
+				<td id="big_right_left"><input type="text" onkeydown="upperCaseF(this, document.form2.i36)" maxlength="1" name="i35" required></td>
+				<td id="separator2"></td>
+				<td id="big_right_left"><input type="text" onkeydown="upperCaseF(this, document.form2.i40)" maxlength="1" name="i36" required></td>
+			    </tr>
+			    
+			    <tr>
+				<td id="big_bottom_left"><input type="text" onkeydown="upperCaseF(this, document.form2.i41)" maxlength="1" name="i40" required></td>
+				<td id="big_bottom"><input type="text" onkeydown="upperCaseF(this, document.form2.i42)" maxlength="1" name="i41" required></td>
+				<td id="big_bottom"><input type="text" onkeydown="upperCaseF(this, document.form2.i43)" maxlength="1" name="i42" required></td>
+				<td id="big_bottom"><input type="text" onkeydown="upperCaseF(this, document.form2.i44)" maxlength="1" name="i43" required></td>
+				<td id="big_bottom_right"><input type="text" onkeydown="upperCaseF(this, document.form2.i45)" maxlength="1" name="i44" required></td>
+				<td id="separator"></td>
+				<td id="big_bottom_right_left"><input type="text" onkeydown="upperCaseF(this, document.form2.i46)" maxlength="1" name="i45" required></td>
+				<td id="separator2"></td>
+				<td id="big_bottom_right_left"><input type="text" onkeydown="upperCaseF(this, document.form2.s0)" maxlength="1" name="i46" required></td>
+			    </tr>
+			    
+                            <tr height="20px"></tr>
+			    
+                            <tr>
+                                <td id="big_top_bottom_left"><input type="text" onkeydown="upperCaseF(this, document.form2.s1)" maxlength="1" name="s0" style="color: red;" required></td>
+                                <td id="big_top_bottom"><input type="text" onkeydown="upperCaseF(this, document.form2.s2)" maxlength="1" name="s1" style="color: red;" required></td>
+                                <td id="big_top_bottom"><input type="text" onkeydown="upperCaseF(this, document.form2.s3)" maxlength="1" name="s2" style="color: red;" required></td>
+                                <td id="big_top_bottom"><input type="text" onkeydown="upperCaseF(this, document.form2.s4)" maxlength="1" name="s3" style="color: red;" required></td>
+                                <td id="big_top_bottom_right"><input type="text" onkeydown="upperCaseF(this, 'not')" maxlength="1" name="s4" style="color: red;" required></td>
+                            </tr>
+			</table>
+
+			<br/><br/>
+			<div align="center">
+			    <button type="submit">COMPROBAR SOLUCIÓN</button>
+			</div>
+		    </form>
+                </td>
+            </tr>
+	    
+	    <tr>
+                <td style="text-align: right;">
+                    <form action="generador.php" method="post">
+                        <button type="submit" style="margin-right: -65px; margin-top: 25px;">
+                            GENERAR DEDUCCIÓN
+                        </button>
+                    </form>
+                </td>
+            </tr>
+        </table>
+
+        <br/><br/><br/><br/>
+	
+    </body>
+</html>
