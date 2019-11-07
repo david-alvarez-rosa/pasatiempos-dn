@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+	<meta charset="UTF-8" />
+	<title>Sopa de Letras - David Álvarez</title>
+	<link rel="stylesheet" type="text/css" href="../css/sopa2.css" />	
+    </head>
+
+    
+    <body background="../img/background.jpg">
+	<h1 align="center" style="margin-left: 40px; margin-right: 40px;">Sopa de Letras - David Álvarez</h1>
+	<a href="../index.html">
+	    <img src="../img/home.png" height="30px" style="position: absolute; top: 22px; left: 15px;" />
+	</a>
+	<br/><br/><br/>
+
+	<form action="index.php" method="post">
+
+	    <div align="center">
+		Número de filas:&nbsp;&nbsp;
+		<input type="number" name="sizei" id="size" />
+		<br/><br/>
+		
+		Número de columnas:&nbsp;&nbsp;
+		<input type="number" name="sizej" id="size" />
+		<br/><br/><br/><br/><br />
+	    </div>		
+
+	    <table width="50%" align="center">
+		<tr>
+		    <td width="25%" style="min-width: 200px;">
+			<div align="center">
+			    <button type="button" onclick="javascript:history.go(-1)">RETROCEDE</button>
+			</div>
+		    </td>
+		    
+		    <td width="25%" style="min-width: 200px;">
+			<div align="center">
+			    <button type="submit">ACTUALIZA TAMAÑO</button>
+			</div>
+		    </td>
+		</tr>
+	    </table>
+	</form>
+
+	<br/><br/><br/><br/>
+	
+    </body>
+</html>
